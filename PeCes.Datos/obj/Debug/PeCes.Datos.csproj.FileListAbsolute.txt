@@ -1,0 +1,6 @@
+C:\Users\julia\source\repos\PeCes\PeCes.Datos\obj\Debug\PeCes.Datos.csproj.AssemblyReference.cache
+C:\Users\julia\source\repos\PeCes\PeCes.Datos\obj\Debug\PeCes.Datos.csproj.CoreCompileInputs.cache
+C:\Users\julia\source\repos\PeCes\PeCes.Datos\bin\Debug\PeCes.Datos.dll
+C:\Users\julia\source\repos\PeCes\PeCes.Datos\bin\Debug\PeCes.Datos.pdb
+C:\Users\julia\source\repos\PeCes\PeCes.Datos\obj\Debug\PeCes.Datos.dll
+C:\Users\julia\source\repos\PeCes\PeCes.Datos\obj\Debug\PeCes.Datos.pdb

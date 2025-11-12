@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MPSitio.master.cs" Inherits="PeCes.Web.MPSitio" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>PeCe's Soporte</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+        .container { width: 960px; margin: 0 auto; }
+        .header { padding: 20px 0; overflow: hidden; border-bottom: 2px solid #004a99; }
+        .logo { float: left; }
+        .search { float: right; margin-top: 40px; }
+        .nav { background-color: #004a99; overflow: hidden; margin-bottom: 20px; }
+        .nav a { float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none; font-weight: bold; }
+        .nav a:hover { background-color: #007bff; }
+        .main-content { padding: 20px; min-height: 400px; }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <asp:HyperLink ID="linkLogoHome" runat="server" NavigateUrl="~/Home.aspx">
+                         <asp:Image ID="imgLogo" runat="server" ImageUrl="~/img/logo.png" AlternateText="PeCe's Logo" Height="90px" />
+                    </asp:HyperLink>
+                </div>
+                <div class="search">
+                    <asp:Label ID="lblBuscar" runat="server" Text="Búsqueda Rápida:"></asp:Label>
+                    <asp:TextBox ID="txtBuscar" runat="server"></asp:TextBox>
+                    <asp:Button ID="btnBuscar" runat="server" Text="Buscar" OnClick="btnBuscar_Click" />
+                </div>
+            </div>
+            
+            <div class="nav">
+                <asp:HyperLink ID="linkHome" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                <asp:HyperLink ID="linkAgregar" runat="server" NavigateUrl="~/CrearTicket.aspx">Agregar Ticket</asp:HyperLink>
+                <asp:HyperLink ID="linkListar" runat="server" NavigateUrl="~/ListadoTickets.aspx">Listar todos</asp:HyperLink>
+            </div>
+
+            <div class="main-content">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
